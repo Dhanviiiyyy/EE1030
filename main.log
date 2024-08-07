@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.2)  6 AUG 2024 06:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.2)  7 AUG 2024 07:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1296,338 +1296,424 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 \end{enumerate}\\\\
+                        
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \textbf
+            {22.} $a,b,c$ are integers, not all simultaneously equal and $\o...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \\\\
+         
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \textbf
+            {23.} Let $\omega=\frac{-1}{2}+i\frac{\sqrt{3}}{2}$,then the val...
+
+? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.73 \begin{vmatrix}
+l.77 \begin{vmatrix}
                     	1 & 1 & 1\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.74 	1 & -1-$\omega
+l.78 	1 & -1-$\omega
                     ^{2}$ & $\omega^{2}$\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.74 	1 & -1-$\omega^{2}$ &
+l.78 	1 & -1-$\omega^{2}$ &
                             $\omega^{2}$\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.74 	1 & -1-$\omega^{2}$ & $\omega
+l.78 	1 & -1-$\omega^{2}$ & $\omega
                                    ^{2}$\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.74 	1 & -1-$\omega^{2}$ & $\omega^{2}$\\
+l.78 	1 & -1-$\omega^{2}$ & $\omega^{2}$\\
                                           
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.75 	1 & $\omega
-                 ^{2}$ & $\omega^{4}$
+l.79 	1 & $\omega
+                 ^{2}$ & $\omega^{4}$ \\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.75 	1 & $\omega^{2}$ &
-                         $\omega^{4}$
+l.79 	1 & $\omega^{2}$ &
+                         $\omega^{4}$ \\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.75 	1 & $\omega^{2}$ & $\omega
-                                ^{4}$
+l.79 	1 & $\omega^{2}$ & $\omega
+                                ^{4}$ \\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.76 \end{vmatrix}
+l.79 	1 & $\omega^{2}$ & $\omega^{4}$ \\
+                                        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 \end{vmatrix}
                   
 ? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.76 \end{vmatrix}
-                  
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \\\\
+         
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--83
+! LaTeX Error: There's no line here to end.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 \textbf
+            {24.} If $\frac{w-\overline{w}z}{1-z}$ is purely real where $w=\...
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--83
-
- []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 60--83
-\OT1/txr/bx/n/12 22. $\OML/txmi/m/it/12 a; b; c$ \OT1/txr/m/n/12 are in-te-gers
-, not all si-mul-ta-ne-ously
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--83
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.92 (b) (3-4$i$)$e^
-                    {\frac{i\pi}{4}}\\\\
 ? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.93 (c) (4+3$i$)$e^
-                    {\frac{i\pi}{4}}\\\\
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 \\\\
+         
 ? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.94 (d) (3+4$i$)$e^
-                    {\frac{i\pi}{4}}\\
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \textbf
+            {25.} A man walks a distance of 3 units from the origin towards ...
+
 ? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.96 \textbf{26.} If $|z|=1$ and $z\neq
-                                       \pm1$, then all the values of $\frac{...
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 \\\\
+          
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \textbf
+             {26.} If $\abs{z}=1$ and $z\neq\pm1$, then all the values of $\...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 \\\\
+          
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 \textbf
+             {27.} A particle $P$ starts from the point $z_{0}=1+2i$, where ...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \\\\
+          
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 \textbf
+             {28.} Let $z=\cos\theta+i\sin\theta$. Then the value of $\sum_{...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \\\\
+          
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \textbf
+             {29.} Let $z=x+iy$ be a complex number where $x$ and $y$ are in...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 \\\\
+          
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 \textbf
+             {30.} Let $z$ be a complex number such that the imaginary part ...
+
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.144 \\\\
+          
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 \textbf
+             {31.} Let complex numbers $\alpha$ and $\frac{1}{\overline{\alp...
+
+? 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 \\\\
+          
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 \textbf
+             {32.} Let $S$ be the set of all complex numbers $z$ satisfying ...
 
 ? 
 LaTeX Font Info:    Trying to load font information for OMS+txr on input line 1
-32.
+53.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 132.
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 2790) in paragraph at lines 84--138
-\OT1/txr/m/n/12 the ori-gin to-wards the north-east ( N 45\TS1/txr/m/n/12 °\OT1
-/txr/m/n/12 E)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--138
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 153.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160 \\\\
+          
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 \section
+              { MCQ's with One or More than One Correct}
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \\\\
+          
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 \textbf
+             {2.} Let $z_{1}$ and $z_{2}$ be complex numbers such that $z_{1...
+
+? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.145 ... be complex numbers such that $z_{1}$\neq
+l.170 ... be complex numbers such that $z_{1}$\neq
                                                   $z_{2}$ and $|z_{1}|$=$|z_...
 
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.145 ... complex numbers such that $z_{1}$\neq$z_
+l.170 ... complex numbers such that $z_{1}$\neq$z_
                                                   {2}$ and $|z_{1}|$=$|z_{2}...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--165
+! LaTeX Error: There's no line here to end.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \\\\
+          
+? 
 
+! LaTeX Error: There's no line here to end.
 
-Underfull \hbox (badness 2469) in paragraph at lines 139--165
-\OT1/txr/bx/n/12 2. \OT1/txr/m/n/12 Let $\OML/txmi/m/it/12 z[]$ \OT1/txr/m/n/12
- and $\OML/txmi/m/it/12 z[]$ \OT1/txr/m/n/12 be com-plex num-bers such
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 \textbf
+             {3.} If $z_{1}$ and $z_{2}$ are two non-zero complex numbers su...
 
+? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--165
+! LaTeX Error: There's no line here to end.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.187 \\\\
+          
+? 
 
+! LaTeX Error: There's no line here to end.
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--165
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.188 \textbf
+             {4.} The value of $\sum_{k=1} ^{6} (\sin \frac{2\pi k}{7}-i\cos...
 
- []
+? 
+[2
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--165
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-(./main.aux)
+] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 02042BF847BCA0A3314409C9FADE54E4;482.
  ) 
 Here is how much of TeX's memory you used:
- 30492 strings out of 476091
- 599967 string characters out of 5794082
- 1881330 words of memory out of 5000000
- 50203 multiletter control sequences out of 15000+600000
+ 30562 strings out of 476091
+ 600501 string characters out of 5794082
+ 1893330 words of memory out of 5000000
+ 50206 multiletter control sequences out of 15000+600000
  573918 words of font info for 153 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,8n,96p,1172b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,8n,96p,1172b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1637,10 +1723,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 64120 bytes).
+Output written on main.pdf (2 pages, 64188 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 72 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
