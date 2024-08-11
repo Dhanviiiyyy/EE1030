@@ -1,0 +1,150 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-1 (extra) }
+\author{AI24BTECH11036- Shreedhanvi Yadlapally}
+\maketitle
+\newpage
+\bigskip
+\section{Subjective Problems}
+\begin{enumerate}
+
+\item Tangent at a point $P_{1}$ {other than \brak{0, 0}} on the curve $y=x^{3}$ meets the curve again at $P_{2}$. The tangent at $P_{2}$ meets the curve again at $P_{1}$, and so on. Show that the abscissae of $P_{1}, P_{2}, P_{3} \dots P_{n}$, form a G.P. Also find the ratio. \sbrak{area(\Delta P_{1}P_{2}P_{3})}/\sbrak{area(\Delta P_{2}P_{3}P_{4})}
+
+	\hfill{(1993 - 5 Marks)}
+
+\item A line through $A \brak{5, 4}$ meets the line $x+3y+2=0$, $2x+y+4=0$ and $x-y-5=0$ at the points $B$, $C$ and $D$ respectively. If $\brak{15/AB}^{2}+\brak{10/AC}^{2}-\brak{6/AD}^{2}$, find the equation of the line.
+
+	\hfill{(1993 - 5 Marks)}
+
+\item A rectangle $PQRS$ has it side $PQ$ parallel to the line $y=mx$ 
+and vertices $P$, $Q$ and $S$ on the lines $y=a$, $x=b$ and $x=-b$, 
+respectively. Find the locus of the vertex $R$.
+	
+		\hfill{(1996 - 2 Marks)}
+
+\item Using co-ordinate geometry, prove that the three altitudes of any triangle are concurrent.
+
+	\hfill{(1998 - 8 Marks)}
+
+\item For points $P=\brak{x_{1}, y_{1}}$ and $Q=\brak{x_{2}, y_{2}}$ of the co-ordn=inate plane, a new distance $d\brak{P, Q}$ is defined by $d\brak{P, Q}=\abs{x_{1}-x_{2}}+\abs{y_{1}-y_{2}}$. Let $O=\brak{0, 0}$ and $A=\brak{3, 2}$. Prove that the set of points in the first quadrant which are equidistant (with respect to the new distance) from $O$ and $A$ consists of the union of a line segment of finite length and an infinite ray. Sketch this net in a labelled diagram.
+
+	\hfill{(2000 - 10 Marks)}
+
+\item Let $ABC$ and $PQR$ be any two triangles in the same plane.
+Assume that the perpendiculars from the points $A, B, C$ to 
+the sides $QR, RP, PQ$ respectively are concurrent. Using vector methods or otherwise, prove that the perpendiculars from $P, Q, R$ to $BC, CA, AB$ respectively are also concurrent. 
+
+	\hfill{(2000 - 10 Marks)}
+
+\item Let $a, b, c$ be real numbers with $a^{2}+b^{2}+c^{2}=1$. Show that the equation $\mydet{
+ax-by-c     &bx+ay       &cx+a      \\
+bx+ay       &-ax+by-c   &cy+b       \\
+cx+a         &cy+b         &-ax-by+c \\} =0$
+represents a straight line.
+
+\hfill{(2001 - 6 Marks)}
+
+\item A straight line $L$, through the origin meets the lines $x+y=1$ and $x+y=3$ at $P$ and $Q$ respectively. Through $P$ and $Q$ two 
+straight lines $L_{1}$, and $L_{2}$ are drawn, parallel to $2x-y=5$ and $3x+y=5$ respectively. Lines $L_{1}$ and $L_{2}$ intersect at $R$. Show 
+that the locus of $R$, as $L$, varies, is a straight line. 
+\hfill{(2002 - 5 Marks)}
+
+\item A straight line $L$ with negative slope passes through the 
+point \brak{8, 2} and cuts the positive coordinate axes at points 
+$P$ and $Q$. Find the absolute minimum value of $OP + OQ$, as $L$ 
+varies, where $O$ is the origin.
+
+\hfill{(2002 - 5 Marks)}
+
+\item The area of the triangle formed by the intersection of a line 
+parallel to x-axis and passing through $P\brak{h, k}$ with the lines 
+$y=x$ and $x+y=2$ is $4h^{2}$, Find the locus of the point P.
+
+\hfill{(2005 - 2 Marks)}
+
+\end{enumerate}
+
+\section{Assertion and Reason Type Questions} 
+\begin{enumerate}
+\item Lines $L_{1}: y-x=0$ and $L_{2}: 2x+y=0$ intersect the line $L_{3}: y+2=0$ at $P$ and $Q$, respectively. The bisector of the acute 
+angle between $L_{1}$ and $L_{2}$ intersects $L_{3}$ at $R$.\\
+\textbf{STATEMENT-1 :} The ratio $PR:RQ$ equals $2\sqrt{2}:\sqrt{5}$.\\
+\textbf{STATEMENT-2 :} In any triangle, bisector of an angle divides the triangle into two similar triangles.
+
+\hfill{(2007 - 3 Marks)}
+   \begin{enumerate}[label=(\alph*)]
+   \item Statement-1 is True, Statement-2 is True Statement-2 
+is not a correct explanation for Statement-1 
+   \item Statement-1 is True, Statement-2 is True; Statement-2 
+is NOT a correct explanation for Statement-1 
+   \item Statement-I is True, Statement-2 is False
+   \item Statement-1 is False, Statement-2 is True. 
+   \end{enumerate}
+\end{enumerate}
+
+\section{Integer Value Correct Type}
+\begin{enumerate}
+\item For a point $P$ in the plane, let $d_{1}(P)$ and $d_{2}(P)$ be the 
+distance of the point P from the lines $x-y=0$ and $x+y =0$ 
+respectively. The area of the region $R$ consisting of all points 
+$P$ lying in the first quadrant of the plane and satisfying
+$2\leq d_{1}(P)+d_{2}(P) \leq4$, is
+
+		\hfill{(JEE Adv)}
+\end{enumerate}
+\end{document}
+   
