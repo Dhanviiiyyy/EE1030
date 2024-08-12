@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.2)  11 AUG 2024 16:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.2)  12 AUG 2024 00:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1381,16 +1381,6 @@ Underfull \hbox (badness 3396) in paragraph at lines 93--98
  1$. Show that the equa-tion
  []
 
-! Misplaced alignment tab character &.
-<argument> Assertion &
-                       Reason Type Questions
-l.121 \section{Assertion & Reason Type Questions}
-                                                 
-? 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 121.
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -1398,14 +1388,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ] (./extra.aux)
 Package rerunfilecheck Info: File `extra.out' has not changed.
-(rerunfilecheck)             Checksum: F606829FB0DA32494F1522951B5BEF89;538.
+(rerunfilecheck)             Checksum: 685BC298FFCCF9574DD66B2377615DDC;553.
  ) 
 Here is how much of TeX's memory you used:
- 30624 strings out of 476091
- 602157 string characters out of 5794082
+ 30626 strings out of 476091
+ 602168 string characters out of 5794082
  1882330 words of memory out of 5000000
  50324 multiletter control sequences out of 15000+600000
- 570590 words of font info for 147 fonts, out of 8000000 for 9000
+ 571906 words of font info for 149 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,7n,96p,1173b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1416,7 +1406,7 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on extra.pdf (2 pages, 55324 bytes).
+Output written on extra.pdf (2 pages, 55483 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream
