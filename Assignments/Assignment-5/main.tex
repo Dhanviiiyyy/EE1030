@@ -70,11 +70,18 @@ b) (8, 1), (k, -4), (2, -5)\\ \\
   \caption{Co-ordinates}
   \label{tab1.6.6.1}
 \end{table}
-The rank-nullity theorem states that for any linear transformation, $\vec{M}$, 
+The rank-nullity theorem states that for any linear transformation, ($n$ is the dimension of the space) $\vec{M}$, 
 \begin{align}
-	\text{rank}\brak{\vec{M}}+\text{nullity}\brak{\vec{M}}=n
+	\vec{M}=\myvec{\vec{A_{2}-A_{1}} & \vec{A_{3}-A_{1}} & \dots & \vec{A_{m}-A_{1}}} 
 \end{align}
-where n is the number of columns, rank is the number of linearly independent columns, nullity is the number of linearly dependent columns. If collinear, the two columns are linearly dependent, the matrix has rank 1, the two columns are linearly dependent, the matrix has rank 1, so nullity is equal to 1,for 2-d vectors. \\
+
+\begin{align}
+\text{rank}\brak{\vec{M}}+\text{nullity}\brak{\vec{M}}=n
+	\\
+\text{rank}\brak{\vec{M}}=1
+\end{align}
+
+Consider a set of $m$ points $\vec{A_1,A_2,A_3\dots,A_m}$ in an $n$-dimensional. These points are said to be collinear if they all lie on a single straight line. For collinearity, the vectors formed by subtracting one point from another must be linearly dependent. All the vectors are scalar multiples of each other so the rank must be 1. \\
 For the points $\vec{A}$, $\vec{B}$  and  $\vec{C}$ to be collinear,
 \begin{align}
 	\text{rank} \myvec{ \vec{B-A} & \vec{C-A}}=1
