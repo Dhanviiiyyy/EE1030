@@ -1,0 +1,210 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-6}
+\author{AI24BTECH11036- Shreedhanvi Yadlapally}
+\maketitle
+
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\section{MCQ - 2 marks}
+\begin{enumerate}
+
+	\item Let $u\brak{x,y}$ be the real part of an entire function $f\brak{z}=u\brak{x,y}+iv\brak{x,y}$ for for $z=x+iy\in \mathbb{C}$. If $C$ is the positively oriented boundary of a rectangular region $R$ in $\mathbb{R}^{2}$, then $\oint_{C}\sbrak{\frac{\partial u}{\partial y}dx-\frac{\partial u}{\partial x}dy}=$
+	\begin{multicols}{4}
+	\begin{enumerate}
+		\item 1
+		\item 0
+		\item 2$\pi$
+		\item $\pi$
+	\end{enumerate}
+        \end{multicols}
+
+	\item Let $\phi :\sbrak{0,1}\to \mathbb{R}$ be three times continuously differentiable. suppose that the iterates defined by $x_{n+1}=\phi \brak{x_{n}}, n\geq 0$ converge to the fixed point $\xi$ of $\phi$. If the order of convergence is three then
+	\begin{multicols}{2}
+	\begin{enumerate}
+		\item $\phi \prime \brak{\xi}=0$, $\phi \prime \prime \brak{\xi}=0$
+		\item $\phi \prime \brak{\xi}\neq 0$, $\phi \prime \prime \brak{\xi}=0$
+		\item $\phi \prime \brak{\xi}=0$, $\phi \prime \prime \brak{\xi}\neq 0$ 
+		\item $\phi \prime \brak{\xi}\neq 0$, $\phi \prime \prime \brak{\xi}\neq 0$
+	\end{enumerate}
+	\end{multicols}
+
+	\item Let $f: \sbrak{0,2}\to \mathbb{R}$ be a twice continuously differentiable function. If $\int_{0}^{2} dx=2f\brak{1}$, then the error in the aproximation is
+	\begin{multicols}{2}
+	\begin{enumerate}
+		\item $\frac{f'\brak{\xi}}{12}$ for some $\xi \in \brak{0,2}$
+		\item $\frac{f'\brak{\xi}}{2}$ for some $\xi \in \brak{0,2}$
+ 		\item $\frac{f''\brak{\xi}}{3}$ for some $\xi \in \brak{0,2}$
+		\item $\frac{f''\brak{\xi}}{6}$ for some $\xi \in \brak{0,2}$
+	\end{enumerate}
+	\end{multicols}
+
+	\item For a fixed $t \in \mathbb{R}$, consider the linear programming problem:
+\begin{align*}
+\text{Maximize } z=3x+4y \\
+\text{subject to } x+y \leq 100 \\
+x+3y \leq t \\
+\text{and } x \geq 0, y\geq 0
+\end{align*}
+The maximium value of $z$ is 400 for $t=$ 
+	\begin{multicols}{4}
+	\begin{enumerate}
+		\item 50
+		\item 100
+		\item 200
+		\item 300
+	\end{enumerate}
+	\end{multicols}
+
+\item The minimum value of $z=2x_{1}-x_{2}+x_{3}-5x_{4}+22x_{5}$ subject to
+\begin{align*}
+	x_{1}-2x_{4}+x_{5}=6\\
+	x_{2}+x_{4}-4x_{5}=3\\
+	x_{3}+3x_{4}+2x_{5}=10\\
+\end{align*}
+is
+	\begin{multicols}{4}
+	\begin{enumerate}
+		\item 28
+		\item 19
+		\item 10
+		\item 9
+	\end{enumerate}
+	\end{multicols}
+	
+	\item Using the Hungarian method, the optimal value of the assignment problem whose cost matrix is given by 
+%insert table
+		\begin{table}[ht]
+		\centering
+		\input{table/table.tex}
+		\end{table}
+	\begin{multicols}{4}
+	\begin{enumerate}
+		\item 29
+		\item 52
+		\item 26
+		\item 44
+	\end{enumerate}
+	\end{multicols}
+
+	\item Which of the following sequence $\cbrak{f_{n}}_{n=1}^{\infty}$ of functions does NOT converge uniformly on $\sbrak[0,1]$?
+	\begin{multicols}{2}
+	\begin{enumerate}
+		\item $f_{n}\brak{x}=\frac{e^{-x}}{n}$
+		\item $f_{n}\brak{x}=\brak{1-x}^{n}$
+		\item $f_{n}\brak{x}=\frac{x^{2}+nx}{n}$
+		\item $f_{n}\brak{x}=\frac{\sin\brak{nx+n}}{n}$
+	\end{enumerate}
+	\end{multicols}
+
+	\item Let $E=\cbrak{\brak{x,y}\in \mathbb{R}^{2} : 0<x<y}$. Then $\iint_{E} ye^{-\brak{x+y}}dxdy=$
+	\begin{multicols}{2}
+	\begin{enumerate}
+		\item $\frac{1}{4}$
+		\item $\frac{3}{2}$
+		\item $\frac{4}{3}$
+		\item $\frac{3}{4}$
+	\end{enumerate}
+	\end{multicols}
+
+	\item Let $f_{n}\brak{x}=\frac{1}{n} \sum _{k=0}^{n} \sqrt{k\brak{n-k}} \binom{n}{k} x^{k} \brak{1-x}^{n-k}$ for $x\in \sbrak{0,1}$, $n=1, 2, \dots$. If $\lim _{n\to \infty} f_{n}\brak{x}=f\brak{x}$ for $x\in \sbrak{0,1}$, then the maximum value of $f\brak{x}$ on $\sbrak{0,1}$ is
+	\begin{multicols}{4}
+	\begin{enumerate}
+		\item 1
+		\item $\frac{1}{2}$
+		\item $\frac{1}{3}$
+		\item $\frac{1}{4}$
+	\end{enumerate}
+	\end{multicols}
+
+	\item Let $f : \brak{c_{00}, ||\cdot||_{1}} \to \mathbb{C}$ be a non-zero continuous linear function. The numberof Hahn-Banach extensions of $f$ to $\brak{l^{1}, || \cdot ||_{1}}$ is 
+	\begin{multicols}{2}
+	\begin{enumerate}
+		\item one
+		\item two
+		\item three
+		\item infinite
+	\end{enumerate}
+	\end{multicols}
+
+	\item If $I : \brak{l^{1}, || \cdot ||_{2}} \to \brak{l^{1}, || \cdot ||_{1}}$ is the identity map, then
+	\begin{enumerate}
+		\item both $I$ and $I^{-1}$ are continuous
+		\item $I$ is continuous but $I^{-1}$ is NOT continuous
+		\item $I^{-1}$ is continuous but $I$ is NOT continuous
+		\item neither $I$ nor $I^{-1}$ is continuous
+	\end{enumerate}
+
+\item Consider the topology $\tau = \cbrak{G \subseteq \mathbb{R} : \mathbb{R} | G \text{ is compact in } \brak{\mathbb{R}, \tau _{u}}} \cup \cbrak{\phi, \mathbb{R}}$ on $\mathbb{R}$, where $\tau_{u}$ is the usual topology on $\mathbb{R}$ and $\phi$ is the empty set. Then $\brak{\mathbb{R}, \tau}$ is
+	\begin{enumerate}
+		\item  a connected Hausdorff space
+		\item connected but NOT Hausdorff
+		\item Hausdorff but NOT connected
+		\item neither connected nor Hausdorff
+	\end{enumerate}
+
+
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+
+
