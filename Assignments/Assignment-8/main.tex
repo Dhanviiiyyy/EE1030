@@ -1,0 +1,182 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}  
+\usetikzlibrary{patterns}
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-8}
+\author{AI24BTECH11036- Shreedhanvi Yadlapally}
+\maketitle
+
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\section{Questions with one mark each}
+
+\begin{enumerate}
+
+\item The electric field of an electromagnetic wave is given by $\vec{E}=3 \sin \brak{kz-\omega t}\hat{x} + 4 \cos \brak{kz-wt}\hat{y}$. The wave is
+
+\hfill{2019-PH}
+	\begin{enumerate}
+	\item linearly polarized at an angle $\tan ^{-1} \frac{4}{3}$ from the $x$-axis
+	\item linearly polarized at an angle $\tan ^{-1} \frac{3}{4}$ from the $x$-axis
+	\item eliptically polarized in clockwise direction when seen travelling towards the observer
+	\item eliptically polarized in counter-clockwise direction when seen travelling towards the observer
+	\end{enumerate}
+
+\item The nuclear spin and parity of $^{40} _{20} Ca$ in its ground state is
+
+\hfill{2019-PH}
+
+	\begin{enumerate}
+	\item $0^{+}$
+	\item $0^{-}$
+	\item $1^{+}$
+	\item $1^{-}$
+	\end{enumerate}
+
+\item An infinitely long cylindrical shell has its axis coinciding with the $z$-axis. It carries a surface charge density $\sigma_{0} \cos \phi$, where $\phi$ is the polar angle and $\sigma_{0}$ is a constant. The magnitude of electric field inside the cylinder is
+
+\hfill{2019-PH}
+
+	\begin{multicols}{4}
+	\begin{enumerate}
+		\item 0
+		\item $\frac{\sigma_{0}}{2\epsilon}$
+		\item $\frac{\sigma_{0}}{3\epsilon}$
+		\item $\frac{\sigma_{0}}{4\epsilon}$
+	\end{enumerate}
+	\end{multicols}
+
+\item Consider a three-dimensional crystal of $N$ inert gas atoms. The total energy is given by $U\brak{R}=2N \epsilon \sbrak{p\frac{\sigma}{R}^{12}-q\frac{\sigma}{R}^{6}}$, where $p$=12.13, $q$=14.45 and $R$ is the nearest neighbour distance between two atoms. The two constants $\epsilon$ and $R$, have the dimensions of energy and length, respectively. The equilibrium separation between two nearest neighbour atoms in units of (rounded off to two decimal places) is 
+\hfill{2019-PH}
+
+
+\item The energy-wavevector $\brak{E-k}$ dispersion relation for a particle in two dimensions is $E = Ck$, where $C$ is a constant. If its density of states $D\brak{E}$ is proportional to $E^p$ then the value of $p$ is \rule{1cm}{0.2pt}
+
+\hfill{2019-PH}
+
+
+\item  A circular loop made of a thin wire has radius 2 cm and resistance 2 $\Omega$. It is placed perpendicular to a uniform magnetic field of magnitude $\abs{B}=0.01$ Tesla. At time $t=0$ the field starts decaying as $\vec{B}=\vec{B}_{0} e^{t/t_{0}}$, where $t_{0}=1s$.The total charge that passes through a cross section of the wire during the decay is $Q$. The value of $Q$ in $\mu C$ (rounded off to two decimal places) is \rule{1cm}{0.2pt}
+
+\hfill{2019-PH}
+
+\item The electric field of an electromagnetic wave in vacuum is given by 
+	\begin{align*}
+	\vec{E}=E_{0} \cos \brak{3y+4z-1.5 \times 10^{9}l} \hat{x}
+	\end{align*}
+The wave is reflected from $z=0$ surface. If the pressure exerted on the surface is $\alpha \epsilon_{0} E_{0}^{2}$, the value of $\alpha$ (rounded off to one decimal place) is \rule{1cm}{0.2pt}
+
+\hfill{2019-PH}
+
+
+\item The Hamiltonian for a quantum harmonic oscillator of mass $m$ in three dimensions is
+	\begin{align*}
+	 H=\frac{p^{2}}{2m}+\frac{1}{2}m\omega^{2} r^{2}
+	\end{align*}
+where $\omega$ is the angular frequency. the expectation of $r^{2}$ in the first excited state of the oscillator in units of $\frac{\hbar}{m \omega}$ (rounded off to one decimal place) \rule{1cm}{0.2pt}
+
+\hfill{2019-PH}
+
+
+\item The Hamiltonian for a particle of mass $m$ is $H=\frac{p^{2}}{2m}+kqt$ where $q$ and $p$ are the generalized coordinate and momentum, respectively, $t$ is time and $k$ is a constant. For the initial condition, $q=0$ and $p=0$ at $t=0$, $q\brak{t} \propto t^{\alpha}$. The value of $\alpha$ is \rule{1cm}{0.2pt} 
+
+\hfill{2019-PH}
+
+
+\item At temperature $T$ Kelvin (K), the value of the Fermi function at an energy 0.5 eV above the Fermi energy is 0.01. Then $T$, to the nearest integer, is \rule{1cm}{0.2pt}
+($k_{B}=8.62 \times 10^{-5}$ eV/K)
+
+\hfill{2019-PH}
+
+
+\item Let $\vert \psi_{1} \rangle = \binom{1}{0}$, $\vert \psi_{2} \rangle = \binom{0}{1}$ represent two possible states of a two-level quantum system. The state obtained by the incoherent superposition $\vert \psi_{1} \rangle$ and $\vert \psi_{2} \rangle$ is given by a density matrix that is defined as $\rho \equiv c_{1} \vert \psi_{1} \rangle \langle \psi_{1} + c_{2} \vert \psi_{2} \rangle \langle \psi_{2} \vert$. If $c_{1}=0.4$ and $c_{2}=0.6$, the matrix element $\rho_{22}$ (rounded off to one decimal place) is \rule{1cm}{0.2pt}
+
+\hfill{2019-PH}
+
+
+\item A conventional type-I superconductor has a critical temperature of 4.7 K at zero magnetic field and a critical magnetic field of 0.3 Tesla at 0 K. The critical field in Tesla at 2 K (rounded off to three decimal places) is\rule{1cm}{0.2pt}
+
+\hfill{2019-PH}
+
+
+\end{enumerate}
+
+\section{Questions with two marks each}
+
+\begin{enumerate}
+
+\item Consider the following Boolean expression:
+\begin{align*}
+\brak{\overline{A}+\overline{B}}\sbrak{\overline{A\brak{B+C}}}+A\brak{\overline{B}+\overline{C}}
+\end{align*}
+It can be represented by a single three-input logic gate. Identify the gate.
+
+\hfill{2019-PH}
+
+
+	\begin{multicols}{4}
+	\begin{enumerate}
+	\item AND
+	\item OR
+	\item XOR
+	\item NAND
+	\end{enumerate}
+	\end{multicols}
+
+\end{enumerate}
+
+
+\end{document}
+
+
