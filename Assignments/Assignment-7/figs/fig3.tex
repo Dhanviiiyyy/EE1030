@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+
+% Define coordinates for the block and bar
+\coordinate (TopBlock) at (0,3);
+\coordinate (BottomBlock) at (0,0);
+\coordinate (BarTop) at (0,2.5);
+\coordinate (BarBottom) at (0,0.5);
+
+% Draw the concrete block
+\fill[gray!50] (-1,3) rectangle (1,0);
+\node[above right] at (-0.8,3.6) {Concrete};
+\node[above right] at (-0.8,3.2) {block};
+
+% Draw the steel bar
+\fill[pattern=north east lines] (-0.15,2) rectangle (0.15,-0.5);
+\node[left] at (-0.2,2) {Embedded};
+\node[left] at (-0.2,1.6) {Steel bar};
+
+% Draw the downward arrow for force P
+\draw[thick, ->] (0,0.5) -- (0,-0.5) node[midway, right] {$P$};
+
+% Draw the length arrow L
+\draw[<->] (1.3,2) -- (1.3,0) node[midway, right] {$L$};
+
+\end{tikzpicture}
+
+
+

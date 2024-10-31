@@ -1,0 +1,70 @@
+
+\begin{tikzpicture}
+
+% Site X
+\node at (-2, 11) {Site X};
+\draw[thick, fill=gray!20] (-3, 10.5) rectangle (-1, 0);
+
+% Small black rectangle under Site X
+\draw[thick, fill=black] (-3, 0) rectangle (-1, -0.3);
+
+% Site Y
+\node at (2, 11) {Site Y};
+\draw[thick, fill=gray!20] (1, 10.5) rectangle (3, 0);
+
+% Small black rectangle under Site Y
+\draw[thick, fill=black] (1, 0) rectangle (3, -0.3);
+
+% Ground surface
+\draw[thick] (-4, 10.5) -- (4, 10.5);
+\node at (0, 13) {Uniform Surcharge};
+\node at (0, 11.5) {Ground};
+\node at (0, 11) {surface};
+\draw[thick, <->] (-0.5,10) -- (-0.5,0);
+\draw[thick, <->] (0.5,10) -- (0.5,5);
+\draw[thick, <->] (0.5,5) -- (0.5,0);
+\draw[thick, ->] (-0.8, 12.7) -- (-0.9, 10.5);
+\draw[thick, ->] (0.8, 12.7) -- (0.9, 10.5);
+\draw[thick, ->] (-0.6, 10.8) -- (-0.9, 10);
+\draw[thick, ->] (0.5, 10.8) -- (0.9, 10);
+\draw[thick, ->] (-3.5, 10.5) -- (-3.5, 10);
+\draw[thick, ->] (-3, 10.5) -- (-3, 10);
+\draw[thick, ->] (-2.5, 10.5) -- (-2.5, 10);
+\draw[thick, ->] (-2, 10.5) -- (-2, 10);
+\draw[thick, ->] (-1.5, 10.5) -- (-1.5, 10);
+\draw[thick, ->] (-1, 10.5) -- (-1, 10);
+\draw[thick, ->] (1.5, 10.5) -- (1.5, 10);
+\draw[thick, ->] (2, 10.5) -- (2, 10);
+\draw[thick, ->] (2.5, 10.5) -- (2.5, 10);
+\draw[thick, ->] (3, 10.5) -- (3, 10);
+\draw[thick, ->] (3.5, 10.5) -- (3.5, 10);
+
+% Water table
+\node at (-4, 9.6) {Water Table};
+\draw[thick, ->] (-3.5, 10.5) -- (-3, 10.5);
+\draw[thick, ->] (3.5, 10.5) -- (3, 10.5);
+\node at (4.6, 9.6) {Water Table};
+
+% Layers
+\draw[dashed] (-3, 10) -- (-1, 10);
+\draw[dashed] (1, 10) -- (3, 10);
+\draw[dashed] (-3, 5) -- (-1, 5);
+
+% Labels
+\node[rotate=90] at (-3.5, 5.5) {Isotropic saturated silty clay};
+\node[rotate=90] at (3.5, 7.5) {Isotropic saturated silty clay};
+\node[rotate=90] at (3.5, 2.5) {Isotropic saturated silty clay};
+\node at (2, 5.5) {Thin sand layer};
+\draw[thick] (1,5) -- (3,5);
+
+% Depth labels
+\node at (0, 5.5) {10 m};
+\node at (0.2, 7.5) {5 m};
+\node at (0.2, 2.5) {5 m};
+
+% Bedrock
+\node at (-2, -0.5) {Bedrock};
+\node at (2, -0.5) {Bedrock};
+
+\end{tikzpicture}
+

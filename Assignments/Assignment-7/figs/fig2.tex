@@ -1,0 +1,35 @@
+
+\begin{tikzpicture}
+
+% Define points
+\coordinate (S) at (0,3);
+\coordinate (R) at (3,2);
+\coordinate (Q) at (2,1);
+\coordinate (P) at (1,1);
+\coordinate (W) at (1,0);
+
+% Draw the structure
+\draw[thick] (S) -- (R) -- (Q) -- (P) -- (W);
+
+% Labels for points
+\node[above right] at (S) {S};
+\node[above right] at (R) {R};
+\node[below right] at (Q) {Q};
+\node[below left] at (P) {P};
+\node[left] at (W) {W};
+
+% Fixed point
+\draw[dashed, pattern=north east lines, pattern color=gray] (-0.2,3.2) rectangle (0.2,2.8);
+\node[above] at (0,3.4) {Fixed};
+
+% Length labels with arrows
+\draw[<->] (1,-0.5) -- ++(1,0) node[midway, below] {$L$};
+\draw[<->] (2.5,0.5) -- ++(1,1) node[midway, below] { $ 2L$};
+
+% Downward arrow for W
+\draw[->, thick] (P) -- ++(0,-1) node[midway, left] {};
+
+\end{tikzpicture}
+
+
+

@@ -18,7 +18,8 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} 
 \usepackage{listings}
-\usepackage{gvv}                                        
+\usepackage{gvv}  
+\usetikzlibrary{patterns}
 %\def\inputGnumericTable{}                                 
 \usepackage[latin1]{inputenc}                                
 \usepackage{color}                                            
@@ -112,7 +113,7 @@ $f\brak{x}=
 %fig_1
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.4]{figs/fig1.png}
+\input{figs/fig1.tex}
 \end{figure}
 	\begin{multicols}{4}
 	\begin{enumerate}
@@ -125,9 +126,9 @@ $f\brak{x}=
 
 \item For the cantilever bracket, PQRS, loaded as shown in the adjoining figure (PQ=RS=L, and, QR=2L), which of the following staements is \textbf{FALSE}?
 %fig_2
-\begin{figure}[ht]
+\begin{figure}[h!]
 \centering
-\includegraphics[scale=0.4]{figs/fig2.png}
+\input{figs/fig2.tex}
 \end{figure}
 	\begin{enumerate}
 		\item The portion RS has a constant twisting moment with a value of 2WL.
@@ -136,11 +137,12 @@ $f\brak{x}=
 		\item The portion PQ has no twisting moment.
 	\end{enumerate}
 
+\newpage
 \item Consider a bar of diameter '$D$' embedded in alarge concrete block as shown in the adjoining figure, with a pull out force $P$ being applied. Let $\sigma_b$ and $\sigma_{st}$ be the bond strength of the bar, respectively. If the block is held in position and it is assumed that the material of the block does not fail, which of the following options represents the maximum value of $P$?
 %fig_3
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.4]{figs/fig3.png}
+\input{figs/fig3.tex}
 \end{figure}
 	\begin{multicols}{2}
 	\begin{enumerate}
@@ -159,11 +161,13 @@ $f\brak{x}=
 		\item The sections for both beams P and Q need to be revised.
 	\end{enumerate}
 
+
+
 \item The adjoining figure shows a schematic representation of a steel plate girder to be used as asimply supported beam with a concentrated load. For stiffeners, PQ (running along the beam axis) and RS (running between the top and bottom flanges) which of the following pairs of statements will be \textbf{TRUE}?
 %fig_4
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.4]{figs/fig4.png}
+\input{figs/fig4.tex}
 \end{figure}
 	\begin{enumerate}
 		\item \begin{enumerate}
@@ -188,7 +192,7 @@ $f\brak{x}=
 	%fig_5
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.4]{figs/fig5.png}
+\input{figs/fig5.tex}
 \end{figure}
 	\begin{multicols}{4}
 	\begin{enumerate}
@@ -203,7 +207,7 @@ $f\brak{x}=
 %fig_6
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.4]{figs/fig6.png}
+\input{figs/fig6.tex}
 \end{figure}
 	\begin{multicols}{4}
 	\begin{enumerate}
@@ -218,7 +222,7 @@ $f\brak{x}=
 %fig_7
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.4]{figs/fig7.png}
+\input{figs/fig7.tex}
 \end{figure}
 	\begin{multicols}{4}
 	\begin{enumerate}
@@ -228,7 +232,7 @@ $f\brak{x}=
 		\item 20 kPa
 	\end{enumerate}
 	\end{multicols}
-
+\newpage
 \item A single pipe of length 1500 m and diameter 60 cm connects two resevoirs having a difference of 20 m in their water levels. The pipe is to be replaced by two pipes of the same length and equal diameter $d$ to convey 25\% more discharge under the same head loss. If the friction factor is assumed to be the same for all the pipes, the value of $d$ is approximately equal to which of the following options?
 	\begin{multicols}{4}
 	\begin{enumerate}

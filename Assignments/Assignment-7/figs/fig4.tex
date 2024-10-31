@@ -1,0 +1,39 @@
+
+
+\begin{tikzpicture}
+    % Draw the beam
+    \draw[thick] (0,0) -- (12,0); % Main beam line
+    \draw[thick] (0,0.3) -- (12,0.3); % Top line of beam for thickness
+    \draw[thick] (0,-0.3) -- (12,-0.3); % Bottom line of beam for thickness
+
+    % Hinge support at P (triangle directly under the beam)
+    \draw[thick] (-0.3,-0.6) -- (0,-0.3) -- (0.3,-0.6); % Triangle directly under the beam
+    \fill[pattern=north east lines] (-0.5,-1.2) rectangle (0.5,-0.6); % Shaded pattern below hinge
+    \node[left] at (-0.6,-0.3) {P};
+
+    % Roller support at Q (triangle and circles directly under the beam)
+    \draw[thick] (11.7,-0.6) -- (12,-0.3) -- (12.3,-0.6); % Triangle under the beam
+    \draw[thick] (11.6,-0.9) circle (0.3); % Circle 1
+    \draw[thick] (12.4,-0.9) circle (0.3); % Circle 2
+    \node[right] at (12.5,0) {Q};
+
+    % Vertical force W
+    \draw[thick,->] (6,1) -- (6,0.3); % Arrow for W
+    \node[above] at (6,1) {$W$};
+
+    % Points R and S on the beam
+    \node[above] at (3,0.3) {R};
+    \node[below] at (3,-0.3) {S};
+
+    % Labels for lengths L
+    \draw[<->] (0,-1.5) -- (6,-1.5) node[midway,below] {$L$};
+    \draw[<->] (6,-1.5) -- (12,-1.5) node[midway,below] {$L$};
+
+    % Additional internal beam lines for details
+    \draw[thick] (0,0.15) -- (3,0.15); % Line from P to R (top)
+    \draw[thick] (0,-0.15) -- (3,-0.15); % Line from P to S (bottom)
+
+\end{tikzpicture}
+
+
+
