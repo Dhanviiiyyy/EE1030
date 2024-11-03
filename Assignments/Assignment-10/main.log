@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.13)  3 NOV 2024 19:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.13)  3 NOV 2024 19:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1368,7 +1368,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 File: ts1txr.fd 2000/12/15 v3.1
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texm
 f-dist/fonts/enc/dvips/base/8r.enc}]
-Overfull \hbox (34.21158pt too wide) in paragraph at lines 131--133
+Overfull \hbox (34.21158pt too wide) in paragraph at lines 147--148
 []\OT1/txr/m/n/12 Consider $\U/txsyb/m/n/12 R[]$ \OT1/txr/m/n/12 with the usual
  met-ric. Let $\OML/txmi/m/it/12 A \OT1/txr/m/n/12 = []$ and $\OML/txmi/m/it/12
  B \OT1/txr/m/n/12 = []$.
@@ -1385,11 +1385,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  30625 strings out of 474222
  599780 string characters out of 5748733
- 1949975 words of memory out of 5000000
+ 1945975 words of memory out of 5000000
  52147 multiletter control sequences out of 15000+600000
  616372 words of font info for 151 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,9n,103p,1172b,700s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,9n,103p,1172b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/f
@@ -1399,7 +1399,7 @@ s/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 68499 bytes).
+Output written on main.pdf (3 pages, 68689 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  133 compressed objects within 2 object streams
