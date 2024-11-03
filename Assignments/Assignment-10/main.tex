@@ -1,0 +1,212 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}  
+\usetikzlibrary{patterns}
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-10}
+\author{AI24BTECH11036- Shreedhanvi Yadlapally}
+\maketitle
+
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\section{Questions with one mark each}
+
+\begin{enumerate}
+
+\item Suppose hat the characteristic equation of $M \in \mathbb{C}^{3 \times 3}$ is 
+	\begin{align*}
+		\lambda^{3}+\alpha \lambda^{2} + \beta \lambda -1=0
+	\end{align*}
+where $\alpha, \beta \in \mathbb{C}$ with $\alpha+\beta \neq 0$. Which of the following statements is TRUE?
+	\begin{enumerate}
+		\item $M\brak{I-\beta M}=M^{-1} \brak{M+ \alpha I}$
+		\item $M\brak{I+\beta M}=M^{-1} \brak{M- \alpha I}$
+		\item $M^{-1}\brak{M^{-1}+\beta M}=M-\alpha I$
+		\item $M^{-1}\brak{M^{-1}-\beta M}=M+\alpha I$
+	\end{enumerate}
+
+\item Consider \\
+\textbf{P}: Let $M \in \mathbb{R}^{m \times n}$ with $m>n\geq 2$. If rank$\brak{M}=n$, then the system of linear equations $Mx=0$ has $x=0$ as the only solution. \\
+\textbf{Q}: Let $E \in \mathbb{R}^{m \times n}$, $n\geq 2$ be a non-zero matrix such that $E^{3}=0$. Then $I+E^2$ is a singular matrix. \\
+Which of the following statements is TRUE?
+	\begin{enumerate}
+		\item Both \textbf{P} and \textbf{Q} are TRUE
+		\item Both \textbf{P} and \textbf{Q} are FALSE
+		\item \textbf{P} is TRUE and \textbf{Q} is FALSE
+		\item \textbf{P} is FALSE and \textbf{Q} is TRUE
+	\end{enumerate}
+
+\item Consider the real function of two real variables given by
+	\begin{align*}
+		u\brak{x,y}=e^{2x}\cbrak{\sin 3x \cos 2y \cosh 3y - \cos 3x \sin 2y \sinh 3y}
+	\end{align*}
+Let $v\brak{x,y}$ be the harmonic conjugate of $u\brak{x,y}$ such that $v\brak{0,0}=2.$ Let $z=x+iy$ and $f\brak{z}=u\brak{x,y}+iv\brak{x,y}$, then the value of $4+2if\brak{i \pi}$ is
+	\begin{enumerate}
+		\item $e^{3 \pi}+e^{-3 \pi}$
+		\item $e^{3 \pi}-e^{-3 \pi}$
+		\item $-e^{3 \pi}+e^{-3 \pi}$
+		\item $-e^{3 \pi}-e^{-3 \pi}$
+	\end{enumerate}
+
+\item The value of the integral 
+	\begin{align*}
+		\int_{C} \frac{z^{100}}{z^{101}+1} dz
+	\end{align*}
+	where $C$ is the circle of radius 2 centred at the origin taken in the anti-clockwise
+direction is
+	\begin{enumerate}
+		\item $-2 \pi i$
+		\item $2 \pi$
+		\item 0
+		\item $2 \pi i$
+	\end{enumerate}
+
+\item Let $X$ be a real normed linear space. Let $X_0 = \cbrak{ x \in X: \norm{x}=1}$. If $X_0$ contains two distinct points $x$ and $y$ nd the line segment joining them, then, which of the following statements is TRUE?
+	\begin{enumerate}
+		\item $\norm{x+y}=\norm{x}+\norm{y}$ and $x$, $y$ are linearly independent
+		\item $\norm{x+y}=\norm{x}+\norm{y}$ and $x$, $y$ are linearly dependent
+		\item $\norm{x+y}^{2}=\norm{x}^{2}+\norm{y}^{2}$ and $x$, $y$ are linearly independent
+		\item $\norm{x+y}=2\norm{x} \norm{y}$ and $x$, $y$ are linearly dependent
+	\end{enumerate}
+
+\item Let $\cbrak{e_k : k \in \mathbb{N}}$ be an orthonormal basis for a Hilbert space $H$. Define $f_k = e_k +e_{k+1}, k\in \mathbb{N}$ and $g_j = \sum^{j} _{n=1} \brak{-1}^{n+1} e_n, j \in \mathbb{N}$. Then $\sum _{k=1} ^{\infty} \abs{\langle g_j, f_k \rangle}^{2}$=
+	 \begin{enumerate}
+		\item 0
+		\item $j^2$
+		\item 4$j^2$
+		\item 1
+	 \end{enumerate}
+
+ \item Consider $\mathbb{R}^2$ with the usual metric. Let $A=\cbrak{\brak{x,y} \in \mathbb{R}^2 : x^2+y^2 \leq 1}$ and $B=\cbrak{\brak{x,y} \in \mathbb{R}^2 : (x-2)^2+y^2 \leq 1}$. Let $M=A \cup B$ and $N=\text{interior}\brak{A} \cup \text{interior}\brak{B}$. Then, which of the following statements is TRUE?
+	 \begin{enumerate}
+		\item $M$ and $N$ are connected
+		\item Neither $M$ nor $N$ is connected
+		\item $M$ is connected and $N$ is not connected
+		\item $M$ is not connected and $N$ is connected
+	\end{enumerate}
+
+\item The real sequence generated by the iterative scheme
+	\begin{align*}
+		x_n=\frac{x_{n-1}}{2}+\frac{1}{x_{n-1}}, \, n\geq 1
+	\end{align*}
+ 	
+	\begin{enumerate}
+		\item converges to $\sqrt{2}$, for all $x_0 \in \mathbb{R}$ \ $\cbrak{0}$
+		\item converges to $\sqrt{2}$, whenever $x_0 > \sqrt{\frac{2}{3}}$
+		\item converges to $\sqrt{2}$, whenever $x_0 \in \brak{-1,1}$ \ $\cbrak{0}$
+		\item diverges for any $x_0 \neq 0$
+	\end{enumerate}
+
+\item The initial value problem 
+	\begin{align*}
+		\frac{dy}{dx}= \cos \brak{xy}, \, x \in \mathbb{R}, \, y\brak{0} =y_0,
+	\end{align*}
+ where $y_0$ is a real constant, has
+
+ 	\begin{enumerate}
+		\item a unique solution
+		\item exactly two solutions
+		\item infinitely many solutions
+		\item no solution
+	\end{enumerate}
+
+\item If eigenfunctions corresponding to distinct eigenvalues $\lambda$of the Sturm-Liouville problem 
+	\begin{align*}
+		\frac{d^2 y}{dx^2}-3\frac{dy}{dx}= \lambda y, \, 0<x<\pi, \\
+		y\brak{0}=y\brak{\pi}=0
+	\end{align*}
+are orthogonal with respect to the weight function $w\brak{x}$, then $w\brak{x}$ is
+	\begin{enumerate}
+		\item $e^{-3x}$
+		\item $e^{-2x}$
+		\item $e^{2x}$
+		\item $e^{3x}$
+	\end{enumerate}
+
+\item The steady state solution for the heat equation
+	\begin{align*}
+		\frac{\partial u}{\partial t}-\frac{\partial^2 u}{\partial x^2}=0, \, 0<x<2, \, t>0,
+	\end{align*}
+	with the initial condition $u\brak{x,0}=0, 0<x<2$ and the boundary conditions $u\brak{0,t}=1$ and $u\brak{2,t}=3$, $t>0$, at $x=1$ is
+
+	\begin{enumerate}
+		\item 1
+		\item 2
+		\item 3
+		\item 4
+	\end{enumerate}
+
+\item Consider $\brak{\cbrak{0,1}, T_1}$, where $T_1$ is the subspace topology induced by the Euclidean topology on $\mathbb{R}$, and let $T_2$ be any topology on $\cbrak{0,1}$. Consider the following statements: \\
+	\textbf{P}: If $T_1$ is a proper subset of $T_2$, then $\brak{\cbrak{0,1}, T_2}$ is not compact. \\
+	\textbf{Q}: If $T_2$ is a proper subset of $T_1$, then $\brak{\cbrak{0,1}, T_2}$ is not Hausdorff. \\
+	Then
+	\begin{enumerate}
+		\item Both \textbf{P} and \textbf{Q} are TRUE
+		\item Both \textbf{P} and \textbf{Q} are FALSE
+		\item \textbf{P} is TRUE and \textbf{Q} is FALSE
+		\item \textbf{P} is FALSE and \textbf{Q} is TRUE
+	\end{enumerate}
+
+\item Let $p:\brak{\cbrak{0,1}, T_1} \to \brak{\cbrak{0,1}, T_2}$ be the quotient map, arising from the characteristic function on $\cbrak{ \frac{1}{2}, 1}$, where $T_1$ is the subspace topology induced by the Euclidean topology on $\mathbb{R}$. Which of the following statements is TRUE?
+	\begin{enumerate}
+		\item $p$ is an open map but not a closed map
+		\item $p$ is a closed map but not an open map
+		\item $p$ is a closed map as well as an open map
+		\item $p$ is neither an open map nor a closed map
+	\end{enumerate}
+
+
+
+\end{enumerate}
+\end{document}
