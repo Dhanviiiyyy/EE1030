@@ -1,0 +1,48 @@
+\begin{tikzpicture}
+
+% Pie Chart for 2007
+\node at (0, 0) {
+    \begin{tikzpicture}
+        \node at (0, 1.8) {Year 2007};
+        
+        \begin{scope}
+            \fill[blue!50] (0,0) -- (0:1.5) arc (0:126:1.5) -- cycle; % Coal 35%
+            \fill[orange!50] (0,0) -- (126:1.5) arc (126:216:1.5) -- cycle; % Gas 25%
+            \fill[yellow!50] (0,0) -- (216:1.5) arc (216:342:1.5) -- cycle; % Hydro 30%
+            \fill[pink!50] (0,0) -- (342:1.5) arc (342:360:1.5) -- cycle; % Solar 5%
+            \fill[gray!50] (0,0) -- (342:1.5) arc (342:342+18:1.5) -- cycle; % Wind 5%
+        \end{scope}
+        
+        % Labels for 2007
+        \node[fill=gray!30, rounded corners] at (0.7, 1.2) {Coal 35\%};
+        \node[fill=gray!30, rounded corners] at (-0.7, 0.6) {Gas 25\%};
+        \node[fill=gray!30, rounded corners] at (-1.1, -1) {Hydro 30\%};
+        \node[fill=gray!30, rounded corners] at (0.6, -1.3) {Wind 5\%};
+        \node[fill=gray!30, rounded corners] at (1.2, 0.2) {Solar 5\%};
+    \end{tikzpicture}
+};
+
+% Pie Chart for 2023
+\node at (5, 0) {
+    \begin{tikzpicture}
+        \node at (0, 1.8) {Year 2023};
+        
+        \begin{scope}
+            \fill[blue!50] (0,0) -- (0:1.5) arc (0:72:1.5) -- cycle; % Coal 20%
+            \fill[orange!50] (0,0) -- (72:1.5) arc (72:126:1.5) -- cycle; % Gas 15%
+            \fill[yellow!50] (0,0) -- (126:1.5) arc (126:252:1.5) -- cycle; % Hydro 35%
+            \fill[pink!50] (0,0) -- (252:1.5) arc (252:288:1.5) -- cycle; % Solar 20%
+            \fill[gray!50] (0,0) -- (288:1.5) arc (288:360:1.5) -- cycle; % Wind 10%
+        \end{scope}
+        
+        % Labels for 2023
+        \node[fill=gray!30, rounded corners] at (0.6, 1.1) {Coal 20\%};
+        \node[fill=gray!30, rounded corners] at (-0.6, 0.5) {Gas 15\%};
+        \node[fill=gray!30, rounded corners] at (-1.2, -0.6) {Hydro 35\%};
+        \node[fill=gray!30, rounded corners] at (0.6, -1.3) {Wind 10\%};
+        \node[fill=gray!30, rounded corners] at (1.1, 0) {Solar 20\%};
+    \end{tikzpicture}
+};
+
+\end{tikzpicture}
+
