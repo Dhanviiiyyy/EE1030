@@ -1,0 +1,506 @@
+\documentclass{article}
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2024
+
+
+% ready for submission
+\usepackage[preprint]{neurips_2024}
+
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+%     \usepackage[preprint]{neurips_2024}
+
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+%     \usepackage[final]{neurips_2024}
+
+
+% to avoid loading the natbib package, add option nonatbib:
+%    \usepackage[nonatbib]{neurips_2024}
+
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+
+
+\title{Software Assignment: Eigenvalue Calculation}
+
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+
+\author{%
+  Shreedhanvi Yadlapally\\%\thanks{Use footnote for providing further information about author (webpage, alternative address)---\emph{not} for acknowledging funding agencies.} \\
+  %Department of Computer Science\\
+  %Cranberry-Lemon University\\
+  %Pittsburgh, PA 15213 \\
+  \texttt{AI24BTECH11036} \\
+  % examples of more authors
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \AND
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+}
+
+
+\begin{document}
+
+
+\maketitle
+
+
+\begin{abstract}
+This report presents an implementation of the QR algorithm with optimizations for calculating the eigenvalues of matrices. The QR algorithm was chosen for its effectiveness and balance between accuracy and computational efficiency.  The report also the QR algorithm with other methods, highlighting its advantages in handling different types of matrices. These optimizations make the QR algorithm an efficient choice for practical eigenvalue computations.
+\end{abstract}
+\section{QR-Algorithm}
+
+    The QR algorithm is a popular iterative method for finding the eigenvalues of a matrix. It involves decomposing the matrix into a product of an orthogonal matrix $\vec{Q}$ and an upper triangular matrix $\vec{R}$, then reassembling these factors in a specific way to iteratively converge towards a diagonal or nearly upper-triangular matrix, where the eigenvalues appear as entries on the main diagonal. 
+
+    For a general $n \times n$ matrix $\vec{A}$
+        
+    \textbf{Step-by-step breakdown}
+    
+\textbf{Checking for symmetry}
+
+        $$A \text{ is symmetric is and only if } A[i,j]=A[j,i] \forall i,j$$
+
+    Significance: Checking symmetry helps optimize calculations. For symmetric matrices, we can use specific methods like tridiagonalization that are more efficient than general algorithms.
+
+\textbf{Householder Transformation (Tridiagonalization)}
+
+    Mathematical Steps: 
+    Calculate Norm:
+        $$\norm{u}=\sqrt{\sum_{i=k+1}^n \abs{A[i,k]}^{2}}$$
+
+    Construct Householder Vector:
+        \begin{align*}
+            \alpha = -\text{ sign}(A[k+1,k])\times \norm{u} \\
+            r =\sqrt{\frac{1}{2}(\alpha^2 -\alpha \cdot A[k+1,k])} \\
+            v[k+1]=\frac{A[k+1,k]-\alpha}{2r} \\
+            v[i]=\frac{A[i,k]}{2r} \text{ for } i>k+1
+        \end{align*}
+
+    Apply Transformation:
+        $$A[i,j]=A[i,j]-2v[i] \sum_{l=k+1}^n v[l]A[l,j]$$
+
+        Significance: Transforming the matrix to tridiagonal form simplifies the subsequent QR iterations by reducing computational complexity and improving numerical stability.
+
+\textbf{QR Iteration With Wilkinson Shifts}
+
+    Mathematical Steps:
+    \begin{itemize}
+        \item Wilkinson Shift calculation:
+        \begin{align*}
+            d=\frac{a_{n-2,n-2}-a_{n-1,n-1}}{2} \\
+            \mu = a_{n-1,n-1}-\frac{{a_{n-2,n-1}}^{2}}{d+\sqrt{d^2+{a_{n-2,n-1}}^{2}}}
+        \end{align*}
+
+        \item Apply the shift:
+        $$A=A-\mu I$$
+    \end{itemize}
+
+\textbf{QR decomposition using Givens Rotations:}
+
+\begin{itemize}
+    \item For each element: 
+    \begin{align*}
+        a=a_{k,k}-\mu, b=a_{k+1,k} \\
+        r=\sqrt{a^2 +b^2} \\
+        c=\frac{a}{r}, s=\frac{-b}{r}
+    \end{align*}
+
+    \item Update rows and columns:
+    \begin{align*}
+        G=\begin{bmatrix} c & -s \\ s & c \end{bmatrix} \\
+        A[k:k+2,j]=G \cdot A[k:k+2,j] \\
+        A[i,k:k+2]=A[i,k:k+2]\cdot G^T
+        
+\end{align*}
+
+    \item Reverse the shift
+    $$A=A+\mu I$$
+
+\end{itemize}
+
+\textbf{Convergence check: }
+
+$$\text{off-diagonal norm}=\sum_{i=1}^{n-1} \abs{a_{i,i-1}}$$
+If off-diagonal norm < TOL, stop the iterations.
+
+Significance: Wilkinson shifts improve convergence by focusing the QR iterations, making them more stable and efficient.
+
+Givens rotations zero out sub-diagonal elements, transforming the matrix into an upper triangular form, which is easier to analyze.
+
+\section{Time Complexity Analysis}
+
+\begin{enumerate}
+    \item Matrix Storage and initialization: Reading $n \times n$ matrix elements requires $O(n^2)$ operations.
+    
+    \item Checking for symmetry: 
+            \begin{itemize}
+                \item We need to check each pair of elements $(A,[i,j])$ and $(A[j,i])$ for $i \leq j$
+                \item This requires examining $\frac{n(n-1)}{2}$ elements.
+                \item Time complexity: $O(n^2)$
+            \end{itemize}
+
+    \item Tridiagonalization
+        \begin{enumerate}
+            \item Norm Calculation: For each column $k$, calculate the norm of the sub-column from $k+1$ to $n$.
+                \begin{itemize}
+                    \item Time Complexity: $O(n-K)$ for each column $k$
+                    \item Total for all columns: $$O(n)+O(n-1)+ \ldots O(1) =O(n^2)$$
+                \end{itemize}
+
+           
+            \item Vector Updates: Normalizing and updating the Householder vector involves operations proportional to the size of the sub-matrix.  
+            \begin{itemize}
+                    \item Time Complexity: $O(n-K)$ for each column $k$
+                    \item Total for all columns: $O(n^2)$
+                \end{itemize}
+
+            \item Matrix Updates: Each update involves a rank-1 update of the matrix $A$ requiring $O(n^2)$ operations.
+
+            \begin{itemize}
+                \item Outer loop: $O(n-k) rows$
+                \item Inner loop: $O(n-k) columns$
+                \item Each iteration: $O((n-k)^2)$ multiplications.
+            \end{itemize}
+
+            $$O((n-1)^2)+O((n-2)^2) + \ldots + O(1^2)=O(n^3)$$
+
+            Since we do it for $n$ columns, the time complexity would be $O(n^3)$
+
+            Overall time-complexity for tridiagonalization $O(n^3)$
+        \end{enumerate}
+
+    \item QR Iterations with Givens Rotations: 
+        \begin{enumerate}
+            \item Givens Rotations: Each rotation involves $O(n)$ operations
+                \begin{itemize}
+                    \item We perform these rotations for each off-diagonal element, there are $n-1$ off-diagonal elements per iteration to eliminate.
+
+                    \item Time Complexity per iteration is $O(n^2)$
+                \end{itemize}
+
+            \item Convergence: Typically, the number of iterations required for convergence is proportional to the matrix size. 
+                \begin{itemize}
+                    \item Total iterations: $O(n^2)$
+                \end{itemize}
+        \end{enumerate}
+
+    \item Eigenvalues for small complex matrices,
+    \begin{enumerate}
+        \item for $n=1$: $O(1)$ (returning single element)
+
+        \item for $n=2$:
+
+        \begin{itemize}
+            \item Calculating the trace and determinant: $O(1)$
+            \item Computing the discriminant using the square root: $O(1)$
+        \end{itemize}
+
+        Total: $O(1)$.
+    \end{enumerate}
+    
+\end{enumerate}
+    Based on this, the overall time complexity of this algorithm is $O(n^3)$.
+
+\section{Memory Usage Analysis}
+
+\begin{enumerate}
+    \item Memory for Matrix Storage
+        \begin{enumerate}
+            \item Real Symmetric Matrices: A real symmetric matrix pf size $n \times n$ requires $n^2$ elements each of size \texttt{sizeof(double)} (typically 8 bytes).
+
+            \item Small Complex Matrices: For $n=1$ or $n=2$, $n \times n$ elements, each of size \texttt{sizeof(double complex)} (typically 16 bytes).
+        \end{enumerate}
+
+    \item Temporary Arrays and Variables
+        \begin{enumerate}
+            \item Tridiagonalization: A temporary vector $v$ of size $n$ is allocated on the stack. This uses $n$ \texttt{double} elements. ($n \times 8$ bytes)
+
+            \item QR Algorithm: A copy of the matrix $A$ is created for transformations, using $n^2 \times 8$ bytes of memory.
+
+            \item Eigenvalues array: An array of size $n$ is allocated, requiring $n \times 8$ bytes.
+        \end{enumerate}
+
+    \item Function Overheads such as \texttt{apply\_givens\_rotation} and \texttt{tridiagonalize} use local variables and temporary storage, but these are small in comparison to the matrix.
+    
+\end{enumerate}
+
+\lstinputlisting[language=C]{code/eigenvalues.c}
+
+\section{Suitability for Different Types of Matrices}
+
+\begin{enumerate}
+    \item Symmetric or Hermitian Matrices:
+    \begin{itemize}
+        \item The QR algorithm with shifts is particularly well-suited for symmetric (or Hermitian) matrices.
+
+        \item The tridiagonalization step simplifies the matrix structure, making the QR iterations more efficient.
+    \end{itemize}
+
+    \item General Matrices:
+    \begin{itemize}
+        \item For general non-symmetric matrices, the QR algorithm still works but may require more iterations for convergence.
+
+        \item Hessenberg reduction is used instead of tridiagonalization, transforming the matrix into an upper Hessenberg form, which is a more general approach but less efficient than the symmetric case.
+    \end{itemize}
+
+    \item Sparsity: 
+    \begin{itemize}
+        \item The QR algorithm is less efficient for large sparse matrices because it tends to fill in zero entries, leading to a denser matrix and increased computational cost.
+
+        \item Alternative methods like the Lanczos algorithm may be more suitable for sparse matrices.
+    \end{itemize}
+    
+\end{enumerate}
+
+\section{Other Algorithms to find Eigenvalues}
+
+\begin{enumerate}
+    \item \textbf{Power Iteration}: Iteratively multiplies a random vector by the matrix to converge to the largest eigenvalue. Eigenvalue $\lambda_1$ is computed as $$\lambda_1=\frac{v^T A v}{v^T v}$$ where $v$ is the vector that converges to the dominant eigenvector.
+
+        \textbf{Pros:}
+    \begin{itemize}
+        \item Simple to implement.
+        \item Efficient for sparse matrices and finding the largest eigenvalue.
+        \item Requires $O(N^2)$ operations per iteration for dense matrices, and $O(N)$ for sparse.
+        
+    \end{itemize}
+
+    \textbf{Cons:}
+    \begin{itemize}
+        \item Only computes the largest eigenvalue (or the one with the largest magnitude).
+
+        \item Slow convergence if eigenvalues are close in magnitude.
+
+        \item Does not compute all eigenvalues.
+    \end{itemize}
+
+    
+
+    \item \textbf{Inverse Iteration (Shifted Power Iteration)}: A modification of power iteration that finds eigenvalues near a given shift $\mu$  by solving: $$(A-\mu I)^{-1} v =\lambda v$$ Useful when a few specific eigenvalues are needed.
+
+    \textbf{Pros:}
+    \begin{itemize}
+        \item Fast convergence
+
+        \item Capable of finding eigenvalues close to a specified shift, making it suitable for locating specific eigenvalues within a spectrum
+    \end{itemize}
+
+    \textbf{Cons:} 
+    
+    \begin{itemize}
+        \item The success and speed of convergence depend heavily on the choice of the initial shift. A poor choice can lead to slow convergence or convergence to a wrong eigenvalue.
+
+        \item Each iteration involves solving a linear system, which can introduce numerical instability, especially for poorly conditioned matrices.
+    \end{itemize}
+
+    
+
+    \item \textbf{Jacobi Method}: The Jacobi method is an iterative algorithm used primarily for finding the eigenvalues and eigenvectors of a symmetric matrix. Iterative rotation is done until it converges.
+
+    \textbf{Pros:}
+    \begin{itemize}
+        \item Easy to implement and understand.
+
+        \item Guaranteed to converge for symmetric matrices.
+
+        \item Each rotation can be done independently, making it suitable for parallel processing.
+    \end{itemize}
+
+    \textbf{Cons:}
+    \begin{itemize}
+        \item Converges very slowly for large matrices, slower than QR.
+
+        \item Primarily designed for symmetric matrices, does not generalize well to non-symmetric matrices.
+    \end{itemize}
+
+    \item \textbf{Divide-and-Conquer Method}: Splits a matrix into smaller submatrices, computes eigenvalues for submatrices recursively, and combines results.
+
+    \textbf{Pros:}
+    \begin{itemize}
+        \item The method is well-suited for large matrices because it breaks the problem into smaller, more manageable pieces.
+
+        \item Parallel processing, as subproblems can be solved independently.
+
+        \item smaller subproblems so scales well, more numerical stability, really good for large dense matrices.
+    \end{itemize}
+
+    \textbf{Cons:}
+    \begin{itemize}
+        \item The method can be complex to implement due to the need for efficient partitioning and merging techniques.
+
+        \item Requires additional storage for intermediate submatrices and results, which can increase memory usage.
+
+        \item overhead for small matrices.
+        
+    \end{itemize}
+
+    \item \textbf{Lanczos Algorithm}: The Lanczos algorithm is a powerful method for finding eigenvalues and eigenvectors of large sparse symmetric matrices.
+
+    \textbf{Pros:}
+    \begin{itemize}
+        \item Particularly efficient for large, sparse matrices.
+        \item Converges quickly for well-conditioned problems, especially for finding the largest or smallest eigenvalues.
+        \item Conceptually simple steps involving matrix-vector multiplications and orthogonalization.
+    \end{itemize}
+
+    \textbf{Cons:}
+    \begin{itemize}
+        \item Initial Vector Sensitivity: The choice of the initial vector can affect the convergence and accuracy of the results.
+        \item Prone to numerical instability and loss of orthogonality over many iterations.
+        \item Computing accurate eigenvectors can be more challenging and often requires re-orthogonalization techniques.
+    \end{itemize}
+
+    \item \textbf{Arnoldi Iteration}: It is used for finding eigenvalues and eigenvectors of large, sparse non-symmetric matrices. It is an extension of the Lanczos algorithm and can handle both symmetric and non-symmetric matrices.
+
+    \textbf{Pros:}
+    \begin{itemize}
+        \item Works for both symmetric and non-symmetric matrices
+        \item Particularly efficient for large, sparse matrices
+    \end{itemize}
+
+    \textbf{Cons:}
+    \begin{itemize}
+        \item Prone to numerical instability and loss of orthogonality over many iterations
+
+        \item Computing accurate eigenvectors can be more challenging and often requires re-orthogonalization techniques
+
+        \item Requires storing multiple vectors, which can increase memory usage for large problems.
+    \end{itemize}
+
+    \item \textbf{Singular Value Decomposition}: It decomposes a matrix into three simpler matrices, revealing intrinsic properties such as the range, rank, and null space of the original matrix. Computes eigen values of $A^T A$ or $AA^T$ by factoring $A=U\Sigma V^T$
+
+    \textbf{Pros:}
+    \begin{itemize}
+        \item is not restricted to square matrices
+        \item Provides additional insights into the matrix structure, such as rank and range.
+        \item Numerically stable and robust to rounding errors.
+    \end{itemize}
+
+    \textbf{Cons:}
+    \begin{itemize}
+        \item Indirect Method: For finding eigenvalues, direct methods such as the QR algorithm are typically faster and more efficient.
+        \item Requires significant memory to store the three matrices $U, \Sigma, V$.
+    
+    \end{itemize}
+
+    \item \textbf{Davidson Algorithm}: The Davidson algorithm is an iterative method used to compute a few of the smallest or largest eigenvalues of a large, sparse, real symmetric matrix.
+
+    \textbf{Pros:}
+    \begin{itemize}
+        \item The algorithm converges quickly for matrices that are nearly diagonal or where the eigenvectors are close to the identity matrix.
+        \item It excels at finding a few of the smallest or largest eigenvalues, which is often what is needed in practical applications.
+        \item memory efficient compared to methods that operate on the entire matrix.
+        \item It can handle very large matrices efficiently.
+    \end{itemize}
+
+    \textbf{Cons:}
+    \begin{itemize}
+        \item To maintain stability, re-orthogonalization steps may be required, adding complexity and computational cost, can suffer from loss of orthogonality.
+
+        \item not suitable for non symmetric
+        \item Implementing the Davidson algorithm can be complex
+    \end{itemize}
+\end{enumerate}
+    
+
+
+
+
+\end{document}
